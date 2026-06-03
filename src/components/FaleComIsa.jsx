@@ -83,7 +83,7 @@ export default function FaleComIsa() {
           variants={mainV}
           className="mt-[3rem] max-w-[40rem] font-serif text-[1.7rem] leading-[1.3] text-preto md:text-[2.2rem]"
         >
-          A Isa atende cada candidato individualmente. Pode chamar ela direto.
+          A Isa atende cada candidato individualmente. Pode chama-la direto.
         </motion.h2>
 
         <motion.a
