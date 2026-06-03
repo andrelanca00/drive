@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'drive titulo';
+  src: url('./assets/fonts/drive-titulo.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'drive texto';
+  src: url('./assets/fonts/drive-texto.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'drive texto';
+  src: url('./assets/fonts/drive-texto-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'drive texto';
+  src: url('./assets/fonts/drive-texto-italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'drive texto';
+  src: url('./assets/fonts/drive-texto-bold-italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lighters';
+  src: url('./assets/fonts/lighters-demo.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'classyvogue';
+  src: url('./assets/fonts/classyvogue.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #FAFAF7;
+    color: #181818;
+    font-family: 'drive texto', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    cursor: default;
+  }
+}
+
+@layer utilities {
+  .scroll-indicator {
+    animation: scrollIndicator 2s ease-in-out infinite;
+  }
+}
+
+@keyframes scrollIndicator {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
