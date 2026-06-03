@@ -12,10 +12,12 @@ import CincoPilares from './components/CincoPilares'
 import ComoAcontece from './components/ComoAcontece'
 import Modalidades from './components/Modalidades'
 import Depoimentos from './components/Depoimentos'
+import FaleComIsa from './components/FaleComIsa'
 import Aplicacao from './components/Aplicacao'
 import RetentionModal from './components/RetentionModal'
 import CtaInline from './components/CtaInline'
 import PoliticaPrivacidadeModal from './components/PoliticaPrivacidadeModal'
+import WhatsAppFloat from './components/WhatsAppFloat'
 import { trackLead, trackRegistration } from './lib/pixel'
 
 const TYPEFORM_ID = 'bvBLEskP'
@@ -231,6 +233,7 @@ function App() {
       <CincoPilares />
       <ComoAcontece />
       <Modalidades />
+      <FaleComIsa />
       <Depoimentos />
 
       <Aplicacao
@@ -248,6 +251,8 @@ function App() {
         open={showPrivacy}
         onClose={() => setShowPrivacy(false)}
       />
+
+      <WhatsAppFloat />
     </main>
   )
 }
