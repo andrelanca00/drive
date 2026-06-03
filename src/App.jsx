@@ -170,10 +170,8 @@ function App() {
             transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }}
             className="my-auto flex flex-col items-start gap-[2rem] py-[3rem] md:gap-[2.5rem]"
           >
-            <h1 className="max-w-[42rem] font-lighters text-[2.3rem] uppercase leading-[1.05] tracking-[0.01em] text-branco sm:text-[3rem] md:text-[4.4rem]">
-              O <span className="font-vogue text-marsala">PRÓXIMO NÍVEL</span> DA SUA AGÊNCIA.
-              <br />
-              SEIS MESES COM <span className="font-vogue text-marsala">ANDRÉ LANÇA</span>.
+            <h1 className="max-w-[52rem] font-lighters text-[1.8rem] uppercase leading-[1.1] tracking-[0.01em] text-branco sm:text-[2.4rem] md:text-[3.2rem] lg:text-[3.6rem]">
+              O <span className="font-vogue text-marsala">PRÓXIMO NÍVEL</span> DA SUA AGÊNCIA. SEIS MESES COM <span className="font-vogue text-marsala">ANDRÉ LANÇA</span>.
             </h1>
 
             <div className="flex flex-col items-start gap-[1rem] sm:flex-row sm:items-center sm:gap-[1.5rem]">
