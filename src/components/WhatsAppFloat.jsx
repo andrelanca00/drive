@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { trackCustom } from '../lib/pixel'
 
 const WHATSAPP_URL =
-  'https://wa.me/5544991844853?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20saber%20mais%20sobre%20a%20mentoria%20Drive.'
+  'https://wa.me/44991812090?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20saber%20mais%20sobre%20a%20mentoria%20Drive.'
 
 export default function WhatsAppFloat() {
   const handleClick = () => {

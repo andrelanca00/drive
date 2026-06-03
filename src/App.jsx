@@ -141,8 +141,8 @@ function App() {
           decoding="async"
           className="absolute inset-0 h-full w-full object-cover opacity-60 md:opacity-75"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-preto via-preto/65 to-preto/20" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-preto via-transparent to-preto/40" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-preto via-preto/80 to-preto/30" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-preto via-preto/30 to-preto/50" />
 
         <motion.img
           src={logoGrande}
@@ -172,8 +172,16 @@ function App() {
             transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }}
             className="my-auto flex flex-col items-start gap-[2rem] py-[3rem] md:gap-[2.5rem]"
           >
-            <h1 className="max-w-[52rem] font-lighters text-[1.8rem] uppercase leading-[1.1] tracking-[0.01em] text-branco sm:text-[2.4rem] md:text-[3.2rem] lg:text-[3.6rem]">
-              O <span className="font-vogue text-marsala">PRÓXIMO NÍVEL</span> DA SUA AGÊNCIA. SEIS MESES COM <span className="font-vogue text-marsala">ANDRÉ LANÇA</span>.
+            <h1
+              style={{
+                fontFamily: '"Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Roboto", system-ui, sans-serif',
+                fontWeight: 200,
+                letterSpacing: '0.04em',
+                textShadow: '0 2px 24px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.7)',
+              }}
+              className="max-w-[52rem] text-[1.8rem] uppercase leading-[1.15] text-branco sm:text-[2.4rem] md:text-[3rem] lg:text-[3.4rem]"
+            >
+              O <span style={{ fontFamily: '"classyvogue", Georgia, serif', fontWeight: 400, letterSpacing: '0.02em' }} className="text-marsala">PRÓXIMO NÍVEL</span> DA SUA AGÊNCIA. SEIS MESES COM <span style={{ fontFamily: '"classyvogue", Georgia, serif', fontWeight: 400, letterSpacing: '0.02em' }} className="text-marsala">ANDRÉ LANÇA</span>.
             </h1>
 
             <div className="flex flex-col items-start gap-[1rem] sm:flex-row sm:items-center sm:gap-[1.5rem]">

@@ -30,7 +30,7 @@ const blocos = [
     numero: '04',
     titulo: 'Onboarding.',
     paragrafos: [
-      'Assim que você confirmar sua entrada, recebe um questionário guia. Esse questionário dá ao André e aos conselheiros da mentoria mais contexto sobre sua marca pessoal e sua empresa, para que o trabalho ao longo dos 6 meses seja direcionado a você.',
+      'No dia 01 de julho, todos os inscritos recebem um questionário guia. Esse questionário dá ao André e aos conselheiros da mentoria mais contexto sobre sua marca pessoal e sua empresa, para que o trabalho ao longo dos 6 meses seja direcionado a você.',
     ],
   },
 ]

@@ -93,16 +93,16 @@ export default function TemasComAndre() {
           initial="hidden"
           animate={controls}
           variants={titleV}
-          className="mt-[2.5rem] max-w-[40rem] font-serif text-[2.4rem] md:text-[3.8rem] uppercase leading-[1.05] tracking-[0.02em] text-preto"
+          className="mt-[2.5rem] max-w-[40rem] font-serif font-normal text-[2.2rem] md:text-[3.5rem] leading-[1.2] text-preto"
         >
-          OS TERRITÓRIOS ABERTOS AO LONGO DOS <span className="font-vogue text-cobre">SEIS MESES</span>.
+          Os territórios abertos ao longo dos seis meses.
         </motion.h2>
 
         <motion.p
           initial="hidden"
           animate={controls}
           variants={subtitleV}
-          className="mt-[2rem] max-w-[45rem] font-sans text-[0.95rem] md:text-[1rem] leading-[1.7] text-preto/75"
+          className="mt-[2rem] max-w-[45rem] font-sans font-normal text-[1rem] leading-[1.6] text-preto/70"
         >
           Cada encontro com André abre um território de decisão estratégica do dono de agência madura.
         </motion.p>
@@ -117,12 +117,12 @@ export default function TemasComAndre() {
             <motion.li
               key={i}
               variants={itemV}
-              className="group grid grid-cols-[3rem_1fr] items-baseline gap-[1.5rem] border-t border-preto/15 py-[1.5rem] md:grid-cols-[4rem_1fr] md:py-[1.75rem] md:hover:bg-preto/[0.03] md:transition-colors md:duration-300"
+              className="grid grid-cols-[5rem_1fr] items-baseline gap-[1.5rem] border-t border-preto/10 py-[2rem] md:grid-cols-[5rem_1fr] md:py-[2rem]"
             >
-              <span className="font-serif text-[1rem] md:text-[1.1rem] text-cobre">
+              <span className="font-serif font-normal text-[2.5rem] leading-none text-bordo">
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <span className="font-sans text-[1rem] md:text-[1.15rem] leading-[1.45] text-preto">
+              <span className="font-serif font-normal text-[1.1rem] md:text-[1.4rem] leading-[1.4] text-preto">
                 {t}
               </span>
             </motion.li>
