@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { PopupButton } from '@typeform/embed-react'
 import { trackRegistration } from '../lib/pixel'
 
 const TYPEFORM_ID = 'bvBLEskP'
@@ -40,30 +39,15 @@ export default function CtaInline({ rotulo, titulo, destaque, source, onClick, v
           </h3>
         </div>
 
-        <motion.div
-          animate={{
-            boxShadow: [
-              '0 0 0 0 rgba(165,49,72,0.55)',
-              '0 0 0 14px rgba(165,49,72,0)',
-              '0 0 0 0 rgba(165,49,72,0)',
-            ],
-          }}
-          transition={{ duration: 2.4, repeat: Infinity, ease: 'easeOut' }}
-          whileHover={{ scale: 1.04 }}
-          whileTap={{ scale: 0.98 }}
-          className="flex-shrink-0 self-start md:self-auto"
-        >
-          <PopupButton
-            id={TYPEFORM_ID}
-            size={85}
-            onClick={onClick}
-            onSubmit={trackRegistration}
-            style={{ backgroundColor: '#A53148', color: '#FAFAF7', border: 'none' }}
-            className="cursor-pointer whitespace-nowrap px-[1.75rem] py-[1.1rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] shadow-[0_14px_40px_rgba(165,49,72,0.55)] sm:px-[2.5rem] sm:py-[1.2rem] sm:text-[0.85rem] sm:tracking-[0.25em]"
+        <div className="flex-shrink-0 self-start md:self-auto">
+          <button
+            disabled
+            style={{ backgroundColor: '#2E2A26', color: '#FAFAF780', border: 'none' }}
+            className="cursor-not-allowed whitespace-nowrap px-[1.75rem] py-[1.1rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] sm:px-[2.5rem] sm:py-[1.2rem] sm:text-[0.85rem] sm:tracking-[0.25em]"
           >
-            INSCREVA-SE PARA A DRIVE 2026
-          </PopupButton>
-        </motion.div>
+            INSCRIÇÕES ENCERRADAS
+          </button>
+        </div>
       </motion.div>
     </section>
   )

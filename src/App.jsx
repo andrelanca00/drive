@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { motion, useMotionValue, useSpring, useTransform, useScroll } from 'framer-motion'
-import { PopupButton } from '@typeform/embed-react'
 import logoGrande from './assets/logo/logo-2-branco.svg'
 import andreHero from './assets/images/andre-close-retrato-colorido.jpg'
 import andreHeroSm from './assets/images/andre-close-retrato-colorido-sm.jpg'
@@ -100,34 +99,20 @@ function App() {
     <main className="relative min-h-screen w-full overflow-x-hidden bg-preto text-branco">
       <motion.div
         initial={{ opacity: 0, y: -12 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          boxShadow: [
-            '0 0 0 0 rgba(165,49,72,0.7)',
-            '0 0 0 16px rgba(165,49,72,0)',
-            '0 0 0 0 rgba(165,49,72,0)',
-          ],
-        }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{
           opacity: { duration: 0.8, delay: 1.5, ease: 'easeOut' },
           y: { duration: 0.8, delay: 1.5, ease: 'easeOut' },
-          boxShadow: { duration: 2.2, repeat: Infinity, ease: 'easeOut', delay: 2 },
         }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.97 }}
         className="fixed right-4 top-6 z-50 pointer-events-auto sm:right-6 sm:top-8"
       >
-        <PopupButton
-          id={TYPEFORM_ID}
-          size={85}
-          onClick={() => handleInscrevaClick('floating-button')}
-          onSubmit={trackRegistration}
-          style={{ backgroundColor: '#A53148', color: '#FAFAF7', border: 'none' }}
-          className="cursor-pointer px-[1.5rem] py-[0.9rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] shadow-[0_12px_36px_rgba(165,49,72,0.65)] sm:px-[2rem] sm:py-[1rem] sm:text-[0.85rem] sm:tracking-[0.25em]"
+        <button
+          disabled
+          style={{ backgroundColor: '#2E2A26', color: '#FAFAF780', border: 'none' }}
+          className="cursor-not-allowed px-[1.5rem] py-[0.9rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] sm:px-[2rem] sm:py-[1rem] sm:text-[0.85rem] sm:tracking-[0.25em]"
         >
-          INSCREVA-SE
-        </PopupButton>
+          INSCRIÇÕES ENCERRADAS
+        </button>
       </motion.div>
 
       <section className="relative flex min-h-screen w-full items-stretch overflow-hidden bg-preto">
@@ -185,30 +170,15 @@ function App() {
             </h1>
 
             <div className="flex flex-col items-start gap-[1rem] sm:flex-row sm:items-center sm:gap-[1.5rem]">
-              <motion.div
-                animate={{
-                  boxShadow: [
-                    '0 0 0 0 rgba(165,49,72,0.7)',
-                    '0 0 0 18px rgba(165,49,72,0)',
-                    '0 0 0 0 rgba(165,49,72,0)',
-                  ],
-                }}
-                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeOut', delay: 2 }}
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.97 }}
-                className="inline-block"
-              >
-                <PopupButton
-                  id={TYPEFORM_ID}
-                  size={85}
-                  onClick={() => handleInscrevaClick('hero')}
-                  onSubmit={trackRegistration}
-                  style={{ backgroundColor: '#A53148', color: '#FAFAF7', border: 'none' }}
-                  className="cursor-pointer px-[1.75rem] py-[1.1rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] shadow-[0_14px_40px_rgba(165,49,72,0.6)] sm:px-[2.5rem] sm:py-[1.25rem] sm:text-[0.9rem] sm:tracking-[0.25em]"
+              <div className="inline-block">
+                <button
+                  disabled
+                  style={{ backgroundColor: '#2E2A26', color: '#FAFAF780', border: 'none' }}
+                  className="cursor-not-allowed px-[1.75rem] py-[1.1rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] sm:px-[2.5rem] sm:py-[1.25rem] sm:text-[0.9rem] sm:tracking-[0.25em]"
                 >
-                  INSCREVA-SE PARA A DRIVE 2026
-                </PopupButton>
-              </motion.div>
+                  INSCRIÇÕES ENCERRADAS
+                </button>
+              </div>
 
               <span className="font-sans text-[0.65rem] uppercase tracking-[0.3em] text-branco/55">
                 JULHO A DEZEMBRO 2026

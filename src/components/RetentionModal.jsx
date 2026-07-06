@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { PopupButton } from '@typeform/embed-react'
 import { trackRegistration, trackCustom } from '../lib/pixel'
 
 const TYPEFORM_ID = 'bvBLEskP'
@@ -83,30 +82,15 @@ export default function RetentionModal({ open, onClose, onCtaClick }) {
                 AGORA NÃO
               </button>
 
-              <motion.div
-                animate={{
-                  boxShadow: [
-                    '0 0 0 0 rgba(165,49,72,0.7)',
-                    '0 0 0 14px rgba(165,49,72,0)',
-                    '0 0 0 0 rgba(165,49,72,0)',
-                  ],
-                }}
-                transition={{ duration: 2.2, repeat: Infinity, ease: 'easeOut' }}
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block"
-              >
-                <PopupButton
-                  id={TYPEFORM_ID}
-                  size={85}
-                  onClick={handleCta}
-                  onSubmit={trackRegistration}
-                  style={{ backgroundColor: '#A53148', color: '#FAFAF7', border: 'none' }}
-                  className="cursor-pointer px-[1.75rem] py-[1.1rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] shadow-[0_14px_40px_rgba(165,49,72,0.6)] sm:px-[2.5rem] sm:text-[0.85rem] sm:tracking-[0.25em] md:text-[0.9rem]"
+              <div className="inline-block">
+                <button
+                  disabled
+                  style={{ backgroundColor: '#2E2A26', color: '#FAFAF780', border: 'none' }}
+                  className="cursor-not-allowed px-[1.75rem] py-[1.1rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] sm:px-[2.5rem] sm:text-[0.85rem] sm:tracking-[0.25em] md:text-[0.9rem]"
                 >
-                  INSCREVA-SE PARA A DRIVE 2026
-                </PopupButton>
-              </motion.div>
+                  INSCRIÇÕES ENCERRADAS
+                </button>
+              </div>
             </div>
           </motion.div>
         </motion.div>

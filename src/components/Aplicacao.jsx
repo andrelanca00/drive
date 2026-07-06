@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react'
 import { motion, useAnimation } from 'framer-motion'
-import { PopupButton } from '@typeform/embed-react'
 import logoBranco from '../assets/logo/logo-2-branco.svg'
 import resultBranco from '../assets/logo/result-branco.png'
 import { trackRegistration } from '../lib/pixel'
@@ -83,30 +82,15 @@ export default function Aplicacao({ onInscrevaClick, onOpenPrivacy }) {
           variants={buttonV}
           className="mt-[4rem]"
         >
-          <motion.div
-            animate={{
-              boxShadow: [
-                '0 0 0 0 rgba(165,49,72,0.7)',
-                '0 0 0 20px rgba(165,49,72,0)',
-                '0 0 0 0 rgba(165,49,72,0)',
-              ],
-            }}
-            transition={{ duration: 2.4, repeat: Infinity, ease: 'easeOut' }}
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.98 }}
-            className="inline-block"
-          >
-            <PopupButton
-              id={TYPEFORM_ID}
-              size={85}
-              onClick={onInscrevaClick}
-              onSubmit={trackRegistration}
-              style={{ backgroundColor: '#A53148', color: '#FAFAF7', border: 'none' }}
-              className="cursor-pointer px-[1.75rem] py-[1.25rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] shadow-[0_14px_40px_rgba(165,49,72,0.65)] sm:px-[3rem] sm:py-[1.5rem] sm:text-[0.9rem] sm:tracking-[0.25em] md:px-[3.5rem] md:py-[1.6rem] md:text-[1rem] md:tracking-[0.3em]"
+          <div className="inline-block">
+            <button
+              disabled
+              style={{ backgroundColor: '#2E2A26', color: '#FAFAF780', border: 'none' }}
+              className="cursor-not-allowed px-[1.75rem] py-[1.25rem] font-sans text-[0.8rem] font-bold uppercase tracking-[0.2em] sm:px-[3rem] sm:py-[1.5rem] sm:text-[0.9rem] sm:tracking-[0.25em] md:px-[3.5rem] md:py-[1.6rem] md:text-[1rem] md:tracking-[0.3em]"
             >
-              INSCREVA-SE PARA A DRIVE 2026
-            </PopupButton>
-          </motion.div>
+              INSCRIÇÕES ENCERRADAS
+            </button>
+          </div>
         </motion.div>
 
         <motion.p
